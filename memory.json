@@ -1,0 +1,139 @@
+[
+  {
+    "role": "user",
+    "content": "What is 100 divided by 0?"
+  },
+  {
+    "role": "assistant",
+    "content": "Dividing a number by zero is undefined in mathematics. Therefore, \\(100 \\div 0\\) does not have a valid result."
+  },
+  {
+    "role": "user",
+    "content": "Use the slow tool with input hello"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_p8e0kMg4xla53dzPLifr3UqU",
+        "type": "function",
+        "function": {
+          "name": "slow_note",
+          "arguments": "{\"input\":\"hello\"}"
+        }
+      }
+    ],
+    "refusal": null,
+    "annotations": []
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_p8e0kMg4xla53dzPLifr3UqU",
+    "content": "Error: unknown tool"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems there was an issue with the tool I attempted to use. Let me try again to process your request with the correct tool.",
+    "tool_calls": [
+      {
+        "id": "call_2lINNCNPRv4xV6xY2Iit9b8G",
+        "type": "function",
+        "function": {
+          "name": "slow_note",
+          "arguments": "{\"input\":\"hello\"}"
+        }
+      }
+    ],
+    "refusal": null,
+    "annotations": []
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_2lINNCNPRv4xV6xY2Iit9b8G",
+    "content": "Error: unknown tool"
+  },
+  {
+    "role": "assistant",
+    "content": "It appears that the tool I used for the request is not available at the moment. Unfortunately, I am unable to perform that action as requested. If there's anything else you'd like to know or do, please let me know!"
+  },
+  {
+    "role": "user",
+    "content": "Calculate this: )(&&^%"
+  },
+  {
+    "role": "assistant",
+    "content": "The expression you provided contains invalid characters and cannot be calculated as it stands. Please provide a valid mathematical expression, and I'll be happy to help you with the calculation."
+  },
+  {
+    "role": "user",
+    "content": "What is 144 * 37 and weather in Dhaka?"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_3QCXXji7zTOcgBrjZqqzGdAy",
+        "type": "function",
+        "function": {
+          "name": "calculate",
+          "arguments": "{\"expression\": \"144 * 37\"}"
+        }
+      },
+      {
+        "id": "call_jKSet126nrzywkLtS6knKZz9",
+        "type": "function",
+        "function": {
+          "name": "get_weather",
+          "arguments": "{\"location\": \"Dhaka\"}"
+        }
+      }
+    ],
+    "refusal": null,
+    "annotations": []
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_3QCXXji7zTOcgBrjZqqzGdAy",
+    "content": "5328"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_jKSet126nrzywkLtS6knKZz9",
+    "content": "32°C, humid, partly cloudy"
+  },
+  {
+    "role": "assistant",
+    "content": "The result of \\( 144 \\times 37 \\) is **5328**.\n\nThe current weather in Dhaka is **32°C**, humid, and partly cloudy."
+  },
+  {
+    "role": "user",
+    "content": "Use the slow_tool with input hello"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "tool_calls": [
+      {
+        "id": "call_G41CW1b3RAB9ycTsFW206xWw",
+        "type": "function",
+        "function": {
+          "name": "slow_tool",
+          "arguments": "{\"input\":\"hello\"}"
+        }
+      }
+    ],
+    "refusal": null,
+    "annotations": []
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_G41CW1b3RAB9ycTsFW206xWw",
+    "content": "Error: Tool slow_tool timed out after 3000 ms"
+  },
+  {
+    "role": "assistant",
+    "content": "It seems that the slow tool is timing out and unable to fulfill the request at this moment. If there's anything else you would like to know or do, please let me know!"
+  }
+]
