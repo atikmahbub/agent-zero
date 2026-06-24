@@ -1,0 +1,24 @@
+{
+  "traceId": "trace_1781955304546_me715b",
+  "userMessage": "What is 144 * 37 and weather in Dhaka?",
+  "startTime": 1781955304546,
+  "spans": [
+    {
+      "name": "llm_call_iteration_1",
+      "type": "llm_call",
+      "startTime": 1781955304546,
+      "metadata": {
+        "error": "Error: Connection error."
+      },
+      "status": "error",
+      "endTime": 1781955305843,
+      "durationMs": 1297
+    }
+  ],
+  "totalInputTokens": 0,
+  "totalOutputTokens": 0,
+  "totalCostUsd": 0,
+  "status": "error",
+  "endTime": 1781955305843,
+  "durationMs": 1297
+}

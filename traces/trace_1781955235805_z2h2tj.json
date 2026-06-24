@@ -1,0 +1,47 @@
+{
+  "traceId": "trace_1781955235805_z2h2tj",
+  "userMessage": "What is 500 * 200 * 3?",
+  "startTime": 1781955235805,
+  "spans": [
+    {
+      "name": "llm_call_iteration_1",
+      "type": "llm_call",
+      "startTime": 1781955235805,
+      "metadata": {
+        "inputTokens": 95,
+        "outputTokens": 19,
+        "stopReason": "tool_calls"
+      },
+      "status": "success",
+      "endTime": 1781955236801,
+      "durationMs": 996
+    },
+    {
+      "name": "calculate",
+      "type": "tool_execution",
+      "startTime": 1781955236801,
+      "metadata": {
+        "args": {
+          "expression": "500 * 200 * 3"
+        },
+        "result": "300000"
+      },
+      "status": "success",
+      "endTime": 1781955236801,
+      "durationMs": 0
+    },
+    {
+      "name": "llm_call_iteration_2",
+      "type": "llm_call",
+      "startTime": 1781955236801,
+      "metadata": {},
+      "status": "running"
+    }
+  ],
+  "totalInputTokens": 95,
+  "totalOutputTokens": 19,
+  "totalCostUsd": 0.00002565,
+  "status": "error",
+  "endTime": 1781955237377,
+  "durationMs": 1572
+}

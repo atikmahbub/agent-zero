@@ -1,0 +1,67 @@
+{
+  "traceId": "trace_1781955337327_3i55wq",
+  "userMessage": "What is 144 * 37 and weather in Dhaka?",
+  "startTime": 1781955337327,
+  "spans": [
+    {
+      "name": "llm_call_iteration_1",
+      "type": "llm_call",
+      "startTime": 1781955337327,
+      "metadata": {
+        "inputTokens": 97,
+        "outputTokens": 47,
+        "stopReason": "tool_calls"
+      },
+      "status": "success",
+      "endTime": 1781955339440,
+      "durationMs": 2113
+    },
+    {
+      "name": "calculate",
+      "type": "tool_execution",
+      "startTime": 1781955339440,
+      "metadata": {
+        "args": {
+          "expression": "144 * 37"
+        },
+        "result": "5328"
+      },
+      "status": "success",
+      "endTime": 1781955339440,
+      "durationMs": 0
+    },
+    {
+      "name": "get_weather",
+      "type": "tool_execution",
+      "startTime": 1781955339440,
+      "metadata": {
+        "args": {
+          "city": "Dhaka"
+        },
+        "result": "32°C, humid, partly cloudy"
+      },
+      "status": "success",
+      "endTime": 1781955339440,
+      "durationMs": 0
+    },
+    {
+      "name": "llm_call_iteration_2",
+      "type": "llm_call",
+      "startTime": 1781955339440,
+      "metadata": {
+        "inputTokens": 167,
+        "outputTokens": 36,
+        "stopReason": "stop"
+      },
+      "status": "success",
+      "endTime": 1781955340573,
+      "durationMs": 1133
+    }
+  ],
+  "totalInputTokens": 264,
+  "totalOutputTokens": 83,
+  "totalCostUsd": 0.00008939999999999999,
+  "status": "success",
+  "endTime": 1781955340573,
+  "durationMs": 3246
+}

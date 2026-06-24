@@ -1,0 +1,24 @@
+{
+  "traceId": "trace_1781955305859_lqcq5m",
+  "userMessage": "What is 500 * 200 * 3?",
+  "startTime": 1781955305859,
+  "spans": [
+    {
+      "name": "llm_call_iteration_1",
+      "type": "llm_call",
+      "startTime": 1781955305859,
+      "metadata": {
+        "error": "Error: Connection error."
+      },
+      "status": "error",
+      "endTime": 1781955307049,
+      "durationMs": 1190
+    }
+  ],
+  "totalInputTokens": 0,
+  "totalOutputTokens": 0,
+  "totalCostUsd": 0,
+  "status": "error",
+  "endTime": 1781955307049,
+  "durationMs": 1190
+}
